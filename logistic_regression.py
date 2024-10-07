@@ -12,7 +12,7 @@ testY = test['label']
 testX = test['-1_len':'+1_mean']
 
 scalar = StandardScaler()
-scalar.fit_transform()
+trainXScaled = scalar.fit_transform(trainX)
 
 model = LogisticRegression(random_state=1)
 model.fit(trainX, trainY)
