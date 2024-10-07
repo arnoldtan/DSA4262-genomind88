@@ -59,6 +59,11 @@ def main():
     label_set = open("data.info.labelled", 'r').readlines()
     df = categorize(dataset, label_set)
     df.to_json('dataset0_processed_single_read.json', orient='records', lines=True)
+    train_set = df.sample(frac=0.7, random_state=1)
+    test_set = df.drop(train_set.index)
+
+    train_set.to_json('train_set_1.json', orient='records', lines=True)
+    test_set.to_json('test_set_1.json', orient='records', lines=True)
 
 
 if __name__ == '__main__':
