@@ -74,5 +74,5 @@ For further assistance, you can run `python predict.py -h` to view additional in
 An example dataset `example.json` has been included, with its corresponding output prediction `example_output.csv`. To replicate this, execute the following command:
 
 ```
-python predict.py --dataset example/example.json --model model/model.joblib --output example/output.csv
+python predict.py --dataset examples/example.json --model model/model.joblib --output examples/output.csv
 ```
