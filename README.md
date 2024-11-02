@@ -1,8 +1,8 @@
 # Running on AWS Instance
 
-- [Installation of Python 3.10 and pip](#python-installation)
-- [Installing git and Cloning Repository](#git-installation)
-- [Installing Packages and Running the Model](#packages-installation-and-model-execution)
+- [Installation of Python 3.10 and pip](#installation-of-python-3-10-and-pip)
+- [Installing git and Cloning Repository](#installing-git-and-cloning-repository)
+- [Installing Packages and Running the Model](#installing-packages-and-running-the-model)
 - [Example Dataset and Output](#example-dataset-and-output)
 
 ## Installation of Python 3.10 and pip
