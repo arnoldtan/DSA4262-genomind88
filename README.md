@@ -37,10 +37,12 @@ To clone the repository onto the AWS instance, it is necessary to install Git. P
 sudo apt install git
 ```
 
-Afterwards, you can clone the repository by using the commands below:
+Afterwards, you can clone the repository and navigate into it using the commands below:
 
 ```
-git clone <repository_link>
+git clone https://github.com/arnoldtan/DSA4262-genomind88.git
+cd DSA4262-genomind88
+
 ```
 
 ## Installing Packages and Running the Model
