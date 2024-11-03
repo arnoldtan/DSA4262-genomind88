@@ -30,3 +30,11 @@ M41 <- getSum('SGNex_MCF7_directRNA_replicate4_run1.csv.gz')
 mean_M <- mean(c(M31, M41))
 
 kruskal.test(c(mean_A, mean_Hc, mean_H, mean_K, mean_M), c('A549', 'Hct116', 'HepG2', 'K562', 'MCF7'))
+
+boxplot(list(
+  A549=c(A51, A61),
+  Hct116=c(Hc31, Hc34, Hc43),
+  HepG2=c(He52, He61),
+  K562=c(K41, K51, K61),
+  MCF7=c(c(M31, M41))
+))
