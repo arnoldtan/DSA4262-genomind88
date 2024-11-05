@@ -1,4 +1,26 @@
-# Running on AWS Instance
+# Project Overview
+This project aims to pedict and analyse m6A modifications across cancer cell lines using machine learning methods.
+
+## Repository Contents
+
+- **model.joblib**  
+  The trained machine learning model saved as a `.joblib` file for easy loading and deployment.
+
+- **model_training.py**  
+  Python script used to train the model.
+
+- **predict.py**  
+  Python script for making predictions using the trained model. It loads the model, accepts input data, and outputs predictions as a csv file.
+
+- **requirements.txt**  
+  A list of dependencies required to run the model and associated scripts. 
+
+- **test_dataset.json**  
+  A small test dataset provided in JSON format. This dataset can be used to test the model’s predictions and ensure that the setup works correctly.
+
+
+
+## Running on AWS Instance
 
 - [Installation of Python 3.10 and pip](#installation-of-python-3-10-and-pip)
 - [Installing git and Cloning Repository](#installing-git-and-cloning-repository)
@@ -7,7 +29,7 @@
 
 ## Installation of Python 3.10 and pip
 
-Python 3.10 is required for this project to ensure compatibility with the latest packages. Please execute the following commands on your AWS instance:
+Python 3.10 is required for this project to ensure compatibility with the latest packages. Please execute the following commands line by line on your AWS instance:
 
 ```bash
 sudo apt update
@@ -73,8 +95,8 @@ For further assistance, you can run `python predict.py -h` to view additional in
 
 ## Example Dataset and Output
 
-An example dataset `example.json` has been included, with its corresponding output prediction `example_output.csv`. To replicate this, execute the following command:
+An example dataset `test_dataset.json` has been included, with its corresponding output prediction `example_output.csv`. To replicate this, execute the following command. It should return `output.csv` which is the corresponding output prediction file.
 
 ```
-python predict.py --dataset examples/example.json --model model/model.joblib --output examples/output.csv
+python predict.py --dataset test_dataset.json --model model.joblib --output output.csv
 ```
