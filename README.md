@@ -3,11 +3,11 @@ This project aims to predict and analyse m6A modifications across cancer cell li
 
 ## Repository Contents
 
-- **model.joblib** : The trained machine learning model saved as a `.joblib` file for easy loading and deployment
+- **model.joblib** : The trained machine learning model saved as a `.joblib` file for easy loading and deployment.
 
-- **model_training.py** : Python script used to train the model
+- **model_training.py** : Python script used to train the model.
 
-- **predict.py** : Python script for making predictions using the trained model. It loads the model, accepts input data, and outputs predictions as a csv file
+- **predict.py** : Python script for making predictions using the trained model. It loads the model, accepts input data, and outputs predictions as a csv file.
 
 - **requirements.txt** : A list of dependencies required to run the model and associated scripts. 
 
